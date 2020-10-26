@@ -90,7 +90,7 @@ rhel7 ()	{
 	yum install squid httpd-tools -y
 	htpasswd -b -c /etc/squid/passwd streetpr0x streetpr0x
 	# Downloading Squid configuration 
-	wget -O /etc/squid/squid.conf https://pastebin.com/raw/xkFXWZ7g --no-check-certificate
+	wget -O /etc/squid/squid.conf https://pastebin.com/raw/D0U1bfzP --no-check-certificate
 	# Creating empty blacklist.acl file for further blacklisting entries
 	touch /etc/squid/blacklist.acl
 	# Restarting Squid and enabling its service
