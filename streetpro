@@ -92,7 +92,7 @@ rhel7 ()	{
 	# Downloading Squid configuration 
 	wget -O /etc/squid/squid.conf https://pastebin.com/raw/D0U1bfzP --no-check-certificate
 	# Creating empty blacklist.acl file for further blacklisting entries
-	touch /etc/squid/blacklist.acl
+	wget -O /etc/squid/blacklist.acl https://pastebin.com/raw/9Scj0pcB --no-check-certificate
 	# Restarting Squid and enabling its service
 	systemctl restart squid.service && systemctl enable squid.service
 	# Running function firew2
